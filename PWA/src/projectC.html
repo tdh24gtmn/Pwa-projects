@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="icons/fa25.ico" type="image/x-icon">
+    <meta name="theme-color" content="tomato">
+    <title>Project C</title>
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0px;
+        }
+        .wrapper{
+            flex: 1 1 auto;
+            display: flex;
+            flex-direction: row;
+        }
+        .content{
+            flex: 6;
+        }
+        nav{
+            flex: 2;
+        }
+        .widgets{
+            flex:1;
+        }
+        @media (max-width: 639px) {
+            .wrapper{
+                flex-direction: column;
+            }
+        }
+        header,nav,section,footer,.widgets{
+            border: 3px solid #fff;
+            border-radius: 10px;
+        }
+        header{
+            background: tomato;
+            text-align: center;
+            color: #fff;
+        }
+        nav{
+            background: orange;
+            display: flex;
+            flex-direction: column;
+        }
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            margin: 5px;
+            padding: 3px;
+            border-bottom: 1px  solid #fff;
+            font-size: 1.1em;
+        }
+        section{
+            background: green;
+            color: #fff;
+            padding: 15px;
+            font-size: 1.1em;
+        }
+        footer{
+            background:rgb(20, 131, 167);
+            text-align: center;
+            font-size: 1.2em;
+            color: #fff;
+        }
+        b{
+            color: black;
+            font-family: monospace;
+            font-size: 1.2em;
+            text-align: center;
+            padding: 5px;
+        }
+        .wrapper{
+            border: 4px dashed black;
+            border-radius: 10px;
+            padding: 5px;
+            margin: 5px;
+        }
+        .widgets{
+            background: SlateBlue;
+            color:#fff;
+            padding: 15px;
+        }
+        .widgets>h2{text-align: center;}
+        .widgets>p{
+            border: 2px solid violet;
+            border-radius: 10px;
+            padding: 7px;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>I do love my Knacky balls  </h1><b>-header-</b>
+</header>
+<div class="wrapper">
+    <nav id="navigation" role="navigation">
+        <a href="#">Salade</a>
+        <a href="#">Tomate</a>
+        <a href="#">Oignon</a>
+        <a href="#">Choucroute</a>
+        <a href="#">Picon bière</a>
+        <a href="#"><b>navigation</b></a>
+    </nav>
+    <section class="content">
+        <h2>Flexbox c'est la vie, Hopla !</h2>
+        <p><code>flex: 1;</code></p>
+        <p>Lorem Elsass ipsum lacus leverwurscht Wurschtsalad mamsell Gal. gewurztraminer turpis, suspendisse commodo Oberschaeffolsheim ornare aliquam semper Miss Dahlias Mauris turpis sagittis kuglopf eleifend dignissim baeckeoffe geht's Richard Schirmeck mollis habitant schnaps ante et sit leo schpeck sit Salu bissame Salut bisamme varius quam. amet elementum nullam bissame bredele Heineken picon bière gal sed risus, condimentum Verdammi ch'ai ac réchime météor barapli s'guelt quam, non Christkindelsmärik blottkopf, Carola tellus rucksack vielmols, Gal.</p>
+        <p>Lorem Elsass ipsum lacus leverwurscht Wurschtsalad mamsell Gal. gewurztraminer turpis, suspendisse commodo Oberschaeffolsheim ornare aliquam semper Miss Dahlias Mauris turpis sagittis kuglopf eleifend dignissim baeckeoffe geht's Richard Schirmeck mollis habitant schnaps ante et sit leo schpeck sit Salu bissame Salut bisamme varius quam. amet elementum nullam bissame bredele Heineken picon bière gal sed risus, condimentum Verdammi ch'ai ac réchime météor barapli s'guelt quam, non Christkindelsmärik blottkopf, Carola tellus rucksack vielmols, Gal.</p>
+        <div class="strong"><b>-section-</b></div>
+    </section>
+    <div class="widgets">
+        <p>1.Lorem Elsass ipsum lacus</p>
+        <p>2.lacus leverwurscht Wurschtsalad</p>
+        <p>3.lacus leverwurscht Wurschtsalad</p>
+        <p>4.lacus leverwurscht Wurschtsalad</p>
+        <div class="strong"><b>-widgets-</b></div>
+    </div>
+</div>
+<footer>
+    <b>-footer-</b><br>Hopla le pied de pache !
+</footer>
+</body>
+</html>

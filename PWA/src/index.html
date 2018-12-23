@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name = "theme-color" content = "#fff"/>
+    <link rel="shortcut icon" href="icons/fa25.ico" type="image/x-icon">
+    <title>Projects</title>
+    <meta name="Description" content="projects flexbox css layout">
+    <link rel="manifest" href="manifest.json">
+    <style>body{box-sizing:border-box;font-family:monospace;font-weight:500;text-align:center}h1{margin:60px 0px}a:hover{font-size: 110%;transform: scale(1.1)}.wrapper>a{text-decoration:none;color:#000;border-radius:10px;border:3px outset lightgrey;padding:20px;font-size:22px}.flex{display:flex;flex-wrap:wrap}.flex>a{flex:1 1 100px;margin:10px}#A{background-color:tomato}#B{background-color:orange}#C{background-color:#FF5C7A}#D{background-color:Violet}#E{background-color:MediumSeaGreen}#F{background-color:#9F97DD}#G{background-color:#DD7979}#H{background-color:#969696}#I{background-color:whitesmoke;border:3px dashed black}a:hover{border:3px solid black}#C:hover{background-color:whitesmoke;color:green;border:3px solid green}#D:hover{background-color:whitesmoke;color:orange;border:3px solid orange}#I:hover{background-color:black;color:white;border:3px solid red}.flex>#I{flex-grow:1;flex-shrink:0;}
+    .container > li {
+        margin: 0px;
+        padding: 5px;
+        text-align: center;
+        font-size: 1.5em;
+        color: #ffeead;
+        box-sizing: border-box;
+        background-color: #96ceb4;
+        list-style-type: none;
+    }
+
+    html, body {
+        margin: 0px;
+    }
+
+    ul{
+        margin: 0px;
+    }
+
+    .search-input {
+        background: #ff6e68;
+        border: 0;
+        width: 100%;
+        outline: 0;
+        background: transparent;
+        border-bottom: 1px solid #ffeead;
+        color: #ffeead;
+    }
+    ::placeholder{
+        color: #ffeead;
+    }
+
+    .search-input:focus {
+        outline: none;
+        color: #3b5998;
+    }
+
+    .container > li {
+        background-color: #96ceb4;
+    }
+
+
+    .container > li:nth-child(1) {
+        background-color: #ff6f69;
+    }
+
+    .container > li:nth-child(2) {
+        background-color: #88d8b0;
+    }
+
+    .container > li:nth-child(4) {
+        background-color: #88dd2a;
+    }
+
+    .container {
+        display: flex;
+        padding: 0;
+    }
+
+    .search {
+        flex: 1;
+    }
+
+    @media all and (max-width: 600px) {
+        .container {
+            flex-wrap: nowrap;
+        }
+        .container > li {
+            flex: 1 1 50%;
+        }
+
+        .search > input {
+            text-align: center;
+        }
+    }
+
+    @media all and (max-width: 400px) {
+        .container > li {
+            flex: 1 1 100%;
+        }
+        .search{
+            order:1;
+        }
+    }
+
+    </style>
+</head>
+<body>
+<nav>
+    <ul class="container">
+        <li>Home</li>
+        <li>Profile</li>
+        <li class="search">
+            <input type="text" class="search-input" placeholder="Search">
+        </li>
+        <li>Logout</li>
+    </ul>
+</nav>
+<!--<h1>...</h1>-->
+<h1>Projects:</h1>
+<div class="wrapper flex"><a href="projectA.html" id="A">Project A</a><a href="Mark&Shoes/M&Shoes.html" id="B">Project B</a><a href="projectC.html" id="C" class="C">Project C</a><a href="projectD.html" id="D">Project D</a><a href="./projectE/projectE.html" id="E">Project E</a><a href="projectF.html" id="F">Project F</a><a href="projectG/projectG.html" id="G">Project G</a><a href="./projectH/projectH.html" id="H">Project H</a><a href="./projectI/projectI.html" id="I">Project I</a></div>
+
+
+<script src="https://www.gstatic.com/firebasejs/5.4.1/firebase.js"></script>
+<script>
+    var config = {
+        apiKey: "AIzaSyDNJ2Ky_h6qfGxq7AYxjzI4bbaCcoLW9xM",
+        authDomain: "pwa-first-c0a9e.firebaseapp.com",
+        databaseURL: "https://pwa-first-c0a9e.firebaseio.com",
+        projectId: "pwa-first-c0a9e",
+        storageBucket: "pwa-first-c0a9e.appspot.com",
+        messagingSenderId: "442406614374"
+    };
+    firebase.initializeApp(config);
+    if('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('/sw.js')
+            .then(function() {
+                console.log('Service Worker Registered');
+            });
+    }
+    const messaging = firebase.messaging();
+    messaging.requestPermission()
+        .then(function() {
+            console.log('Notification permission granted.');
+            return messaging.getToken();
+        })
+        .then(function(token) {
+            console.log(token);
+        })
+        .catch(function(err) {
+            console.log('Unable to get permission to notify.', err);
+        })
+</script>
+
+</body>
+</html>

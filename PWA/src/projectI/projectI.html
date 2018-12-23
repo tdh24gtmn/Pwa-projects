@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name = "theme-color" content = "#007bff"/>
+    <link rel="shortcut icon" href="../icons/fa25.ico" type="image/x-icon">
+    <title>Project I</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            /*            margin: 0;*/
+        }
+
+        body {
+            background-color: #f1f1f1;
+            padding: 20px;
+            font-family: Arial;
+        }
+
+        .main {
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        h1 {
+            font-size: 35px;
+            word-break: break-all;
+        }
+
+
+        .row {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        .column {
+            width: 25%;
+        }
+
+        .big {
+            width: 100%;
+        }
+
+        .content {
+            padding: 8px 10px;
+            margin: 5px;
+            background: white;
+        }
+
+        @media screen and (max-width: 900px) {
+            .column {
+                width: 50%;
+            }
+            .big {
+                width: 100%;
+            }
+
+            body {
+                text-align: center;
+            }
+        }
+
+        @media screen and (max-width: 550px) {
+            .column {
+                width: 100%;
+            }
+            .big {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <h1>MYLOGO.COM</h1>
+        <hr>
+        <h2>PORTFOLIO</h2>
+        <p>Resize the browser window to see the responsive effect.</p>
+        <div class="row">
+            <div class="column">
+                <div class="content">
+                    <img src="mountains.jpg" alt="" style="width:100%">
+                    <h2>My Work</h2>
+                    <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+                </div>
+            </div>
+            <div class="column">
+                <div class="content">
+                    <img src="lights.jpg" alt="" style="width:100%">
+                    <h2>My Work</h2>
+                    <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+                </div>
+            </div>
+            <div class="column">
+                <div class="content">
+                    <img src="nature.jpg" alt="" style="width:100%">
+                    <h2>My Work</h2>
+                    <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+                </div>
+            </div>
+            <div class="column">
+                <div class="content">
+                    <img src="mountains.jpg" alt="" style="width:100%">
+                    <h2>My Work</h2>
+                    <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+                </div>
+            </div>
+            <div class="column big">
+                <div class="content">
+                    <img src="p3.jpg" alt="" style="width:100%">
+                    <h2>My Work</h2>
+                    <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+</body>
+
+</html>

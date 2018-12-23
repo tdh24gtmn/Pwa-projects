@@ -1,0 +1,193 @@
+/* line 1, A:/DEV/Html-css/Bootstrap/BS Templates/BS-templates/theBand/stylesheet/sass/style.scss */
+.container {
+  padding: 80px 120px;
+}
+
+/* line 4, A:/DEV/Html-css/Bootstrap/BS Templates/BS-templates/theBand/stylesheet/sass/style.scss */
+.person {
+  border: 10px solid transparent;
+  margin-bottom: 25px;
+  width: 80%;
+  height: 80%;
+  opacity: 0.7;
+}
+
+/* line 11, A:/DEV/Html-css/Bootstrap/BS Templates/BS-templates/theBand/stylesheet/sass/style.scss */
+.person:hover {
+  border-color: #f1f1f1;
+}
+
+/* line 14, A:/DEV/Html-css/Bootstrap/BS Templates/BS-templates/theBand/stylesheet/sass/style.scss */
+.carousel-inner img {
+  -webkit-filter: grayscale(90%);
+  filter: grayscale(90%);
+  /* make all photos black and white */
+  width: 100%;
+  /* Set width to 100% */
+  margin: auto;
+}
+
+/* line 20, A:/DEV/Html-css/Bootstrap/BS Templates/BS-templates/theBand/stylesheet/sass/style.scss */
+.carousel-caption h3 {
+  color: #fff !important;
+}
+
+@media (max-width: 600px) {
+  /* line 24, A:/DEV/Html-css/Bootstrap/BS Templates/BS-templates/theBand/stylesheet/sass/style.scss */
+  .carousel-caption {
+    display: none;
+    /* Hide the carousel text when the screen is less than 600 pixels wide */
+  }
+}
+
+/* line 28, A:/DEV/Html-css/Bootstrap/BS Templates/BS-templates/theBand/stylesheet/sass/style.scss */
+.bg-1 {
+  background: #2d2d30;
+  color: #bdbdbd;
+}
+
+/* line 32, A:/DEV/Html-css/Bootstrap/BS Templates/BS-templates/theBand/stylesheet/sass/style.scss */
+.bg-1 h3 {
+  color: #fff;
+}
+
+/* line 33, A:/DEV/Html-css/Bootstrap/BS Templates/BS-templates/theBand/stylesheet/sass/style.scss */
+.bg-1 p {
+  font-style: italic;
+}
+
+/* line 34, A:/DEV/Html-css/Bootstrap/BS Templates/BS-templates/theBand/stylesheet/sass/style.scss */
+.list-group-item:first-child {
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+}
+
+/* line 38, A:/DEV/Html-css/Bootstrap/BS Templates/BS-templates/theBand/stylesheet/sass/style.scss */
+.list-group-item:last-child {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+/* line 42, A:/DEV/Html-css/Bootstrap/BS Templates/BS-templates/theBand/stylesheet/sass/style.scss */
+.thumbnail {
+  padding: 0 0 15px 0;
+  border: none;
+  border-radius: 0;
+}
+
+/* line 47, A:/DEV/Html-css/Bootstrap/BS Templates/BS-templates/theBand/stylesheet/sass/style.scss */
+.thumbnail p {
+  margin-top: 15px;
+  color: #555;
+}
+
+/* line 51, A:/DEV/Html-css/Bootstrap/BS Templates/BS-templates/theBand/stylesheet/sass/style.scss */
+.btn {
+  padding: 10px 20px;
+  background-color: #333;
+  color: #f1f1f1;
+  border-radius: 0;
+  -webkit-transition: .2s;
+  -o-transition: .2s;
+  transition: .2s;
+}
+
+/* line 60, A:/DEV/Html-css/Bootstrap/BS Templates/BS-templates/theBand/stylesheet/sass/style.scss */
+.btn:hover, .btn:focus {
+  border: 1px solid #333;
+  background-color: #fff;
+  color: #000;
+}
+
+/* line 65, A:/DEV/Html-css/Bootstrap/BS Templates/BS-templates/theBand/stylesheet/sass/style.scss */
+.modal-header, h4, .close {
+  background-color: #333;
+  color: #fff !important;
+  text-align: center;
+  font-size: 30px;
+}
+
+/* line 71, A:/DEV/Html-css/Bootstrap/BS Templates/BS-templates/theBand/stylesheet/sass/style.scss */
+.modal-header, .modal-body {
+  padding: 40px 50px;
+}
+
+/* line 74, A:/DEV/Html-css/Bootstrap/BS Templates/BS-templates/theBand/stylesheet/sass/style.scss */
+.nav-tabs li a {
+  color: #777;
+}
+
+/* line 77, A:/DEV/Html-css/Bootstrap/BS Templates/BS-templates/theBand/stylesheet/sass/style.scss */
+#googleMap {
+  width: 100%;
+  height: 400px;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+/* line 83, A:/DEV/Html-css/Bootstrap/BS Templates/BS-templates/theBand/stylesheet/sass/style.scss */
+.navbar {
+  margin-bottom: 0;
+  background-color: #2d2d30;
+  border: 0;
+  font-size: 11px !important;
+  letter-spacing: 4px;
+  opacity: 0.9;
+}
+
+/* line 91, A:/DEV/Html-css/Bootstrap/BS Templates/BS-templates/theBand/stylesheet/sass/style.scss */
+.navbar li a, .navbar .navbar-brand {
+  color: #d5d5d5 !important;
+}
+
+/* line 94, A:/DEV/Html-css/Bootstrap/BS Templates/BS-templates/theBand/stylesheet/sass/style.scss */
+.navbar-nav li a:hover {
+  color: #fff !important;
+}
+
+/* line 97, A:/DEV/Html-css/Bootstrap/BS Templates/BS-templates/theBand/stylesheet/sass/style.scss */
+.navbar-nav li.active a {
+  color: #fff !important;
+  background-color: #29292c !important;
+}
+
+/* line 101, A:/DEV/Html-css/Bootstrap/BS Templates/BS-templates/theBand/stylesheet/sass/style.scss */
+.navbar-default .navbar-toggle {
+  border-color: transparent;
+}
+
+/* line 104, A:/DEV/Html-css/Bootstrap/BS Templates/BS-templates/theBand/stylesheet/sass/style.scss */
+.open .dropdown-toggle {
+  color: #fff;
+  background-color: #555 !important;
+}
+
+/* line 108, A:/DEV/Html-css/Bootstrap/BS Templates/BS-templates/theBand/stylesheet/sass/style.scss */
+.dropdown-menu li a {
+  color: #000 !important;
+}
+
+/* line 111, A:/DEV/Html-css/Bootstrap/BS Templates/BS-templates/theBand/stylesheet/sass/style.scss */
+.dropdown-menu li a:hover {
+  background-color: red !important;
+}
+
+/* line 114, A:/DEV/Html-css/Bootstrap/BS Templates/BS-templates/theBand/stylesheet/sass/style.scss */
+footer {
+  background-color: #2d2d30;
+  color: #f5f5f5;
+  padding: 32px;
+}
+
+/* line 119, A:/DEV/Html-css/Bootstrap/BS Templates/BS-templates/theBand/stylesheet/sass/style.scss */
+footer a {
+  color: #f5f5f5;
+}
+
+/* line 122, A:/DEV/Html-css/Bootstrap/BS Templates/BS-templates/theBand/stylesheet/sass/style.scss */
+footer a:hover {
+  color: #777;
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=../css/style.map */

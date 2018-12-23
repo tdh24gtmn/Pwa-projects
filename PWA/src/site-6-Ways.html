@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="tomato">
+    <link rel="shortcut icon" href="icons/fa25.ico" type="image/x-icon">
+    <title>6 Ways</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: cursive;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .column {
+            flex: 25%;
+            padding: 20px;
+            color: white;
+            text-align: center;
+        }
+
+        .column:hover {
+            -webkit-transform: scale(1.1);
+            -ms-transform: scale(1.1);
+            transform: scale(1.1);
+            font-size: 180%;
+            /*            border: 10px solid black;*/
+            /*            border-radius: 30%;*/
+            /*
+-webkit-box-shadow: inset 0 0 0 5px white;
+box-shadow: inset 0 0 0 5px white;
+*/
+        }
+
+        @media screen and (max-width: 992px) {
+            .column {
+                flex: 50%;
+            }
+        }
+
+        @media screen and (max-width: 550px) {
+            .row {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Ключевые сферы жизни:</h1>
+    <div class="row">
+        <div class="column" style="background-color:tomato">
+            <h2>Любовь</h2>
+        </div>
+        <div class="column change" style="background-color:orange">
+            <h2>Состояние</h2>
+        </div>
+        <div class="column" style="background-color:DodgerBlue">
+            <h2>Работа</h2>
+        </div>
+        <div class="column" style="background-color:MediumSeaGreen">
+            <h2>Здоровье</h2>
+        </div>
+        <div class="column" style="background-color:violet">
+            <h2>Хобби</h2>
+        </div>
+        <div class="column" style="background-color:blueviolet">
+            <h2>Дружба</h2>
+        </div>
+    </div>
+</body>
+</html>
