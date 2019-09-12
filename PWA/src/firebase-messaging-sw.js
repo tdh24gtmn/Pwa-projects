@@ -1,5 +1,5 @@
-importScripts('https://www.gstatic.com/firebasejs/4.4.0/firebase-app.js');
-importScripts('https://www.gstatic.com/firebasejs/4.4.0/firebase-messaging.js');
+importScripts('https://www.gstatic.com/firebasejs/5.8.1/firebase-app.js');
+importScripts('https://www.gstatic.com/firebasejs/5.8.1/firebase-messaging.js');
 var config = {
     apiKey: "AIzaSyDNJ2Ky_h6qfGxq7AYxjzI4bbaCcoLW9xM",
     authDomain: "pwa-first-c0a9e.firebaseapp.com",

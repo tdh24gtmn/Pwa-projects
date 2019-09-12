@@ -1,30 +1,233 @@
 <!DOCTYPE html>
-<html lang=en>
-<meta charset=utf-8>
-<meta content="width=device-width,initial-scale=1" name=viewport>
-<meta content=#fff name=theme-color>
-<title>Projects</title>
-<link href="projects/icons/fa25.ico" rel="shortcut icon" type=image/x-icon> <title>Projects</title>
-<meta content="projects flexbox css layout bootstrap" name=Description>
-<link href="manifest.json" rel=manifest>
-<link href="style.min.css" rel=stylesheet>
-<nav>
-	<ul class=container>
-		<li>Home<li>Profile<li class=search><input class=search-input placeholder=Search>
-		<li>Logout
-	</ul>
-</nav>
-<h1>Projects:</h1>
-<div class="flex wrapper"><a href=projects/projectA/projectA.html id=A>Project A</a> <a href=projects/projectB/templates/M&Shoes.html id=B>Project B</a>
-     <a href=projects/projectC/projectC.html id=C class=C>Project C</a>
-      <a href=projects/projectD/projectD.html id=D>Project D</a>
-       <a href=projects/projectE/projectE.html id=E>Project E</a>
-		 <a href=projects/projectF/projectF.html id=F>Project F</a> 
-		 <a href=projects/projectG/projectG.html id=G>Project G</a>
-		  <a href=projects/projectH/projectH.html id=H>Project H</a> 
-		  <a href=projects/projectI/projectI.html id=I>Project I</a>
-		  </div>
-<script src="https://www.gstatic.com/firebasejs/5.4.1/firebase.js"></script>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta content=white name=theme-color>
+	<meta content="projects flexbox css layout bootstrap jquery pwa amp" name="Description">
+	<link href="icons/fa25.ico" rel="shortcut icon" type="image/x-icon">
+	<link href="manifest.json" rel="manifest">
+
+	<!-- Site title
+   ================================================== -->
+	<title>Front-End Dev Projects</title>
+
+	<!-- Bootstrap CSS
+   ================================================== -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+
+	<!-- Animate CSS
+   ================================================== -->
+	<link rel="stylesheet" href="css/animate.min.css">
+
+	<!-- Font Icons CSS
+   ================================================== -->
+   <link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/ionicons.min.css">
+
+	<!-- Main CSS
+   ================================================== -->
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- Google web font 
+   ================================================== -->	
+  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,300' rel='stylesheet' type='text/css'>
+	
+</head>
+<body>
+
+
+<!-- Preloader section
+================================================== -->
+<div class="preloader">
+
+	<div class="sk-spinner sk-spinner-pulse"></div>
+
+</div>
+
+
+<!-- Navigation section
+================================================== -->
+<div class="nav-container">
+   <nav class="nav-inner transparent">
+
+      <div class="navbar">
+         <div class="container">
+            <div class="row">
+
+              <div class="brand">
+                <a href="index.html">Andrew_ Tk</a>
+              </div>
+
+              <div class="navicon">
+                <div class="menu-container">
+
+                  <div class="circle dark inline">
+                    <i class="icon ion-navicon"></i>
+                  </div>
+
+                  <div class="list-menu">
+                    <i class="icon ion-close-round close-iframe"></i>
+                    <div class="intro-inner">
+                      <ul id="nav-menu">
+                        <li><a href="#portfolio">Projects</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                      </ul>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+         </div>
+      </div>
+
+   </nav>
+</div>
+
+
+<!-- Header section
+================================================== -->
+
+<section id="header" class="header-one">
+	
+</section>
+
+
+<!-- Portfolio section
+================================================== -->
+<section id="portfolio">
+   <div class="container">
+      <div class="row">
+
+
+            <div class="col-md-offset-3 col-md-6 col-sm-offset-2 col-sm-8">
+                  <div class="header-thumb">
+                      <h1 class="wow fadeIn" data-wow-delay="1.6s">Projects:</h1>
+                  </div>
+                 </div>
+
+         <div class="col-md-12 col-sm-12">
+            
+               <!-- iso section -->
+               <div class="iso-section wow fadeInUp" data-wow-delay="2.6s">
+
+                  <ul class="filter-wrapper clearfix">
+                           <li><a href="#" data-filter="*" class="selected opc-main-bg">All</a></li>
+                           <li><a href="#" class="opc-main-bg" data-filter=".amp">AMP</a></li>
+                           <li><a href="#" class="opc-main-bg" data-filter=".pwa">PWA</a></li>
+                           <!-- <li><a href="#" class="opc-main-bg" data-filter=".vue">Vue.js</a></li> -->
+                        </ul>
+
+                        <!-- iso box section -->
+                        <div class="iso-box-section wow fadeInUp" data-wow-delay="1s">
+                           <div class="iso-box-wrapper col4-iso-box">
+
+                              <div class="iso-box pwa branding col-md-4 col-sm-6">
+                                 <div class="portfolio-thumb">
+                                    <img src="images/nick-zenich-1.jpg" class="img-responsive" alt="Portfolio">
+                                       <div class="portfolio-overlay">
+                                          <div class="portfolio-item">
+                                                <a href="projects/project-1.html"><i class="fa fa-link"></i></a>
+                                                <h2>Project One</h2>
+                                             </div>
+                                       </div>
+                                 </div>
+                              </div>
+
+                              <div class="iso-box col-md-4 col-sm-6">
+                                 <div class="portfolio-thumb">
+                                    <img src="images/miski.jpg" class="img-responsive" alt="Portfolio">
+                                       <div class="portfolio-overlay">
+                                          <div class="portfolio-item">
+                                                <a href="projects/project-2.html"><i class="fa fa-link"></i></a>
+                                                <h2>Project Two</h2>
+                                             </div>
+                                       </div>
+                                 </div>
+                              </div>
+
+                              <div class="iso-box col-md-4 col-sm-6">
+                                 <div class="portfolio-thumb">
+                                    <img src="images/mikozin-site.jpg" class="img-responsive" alt="Portfolio">
+                                       <div class="portfolio-overlay">
+                                          <div class="portfolio-item">
+                                                <a href="projects/project-3.html"><i class="fa fa-link"></i></a>
+                                                <h2>Project Three</h2>
+                                             </div>
+                                       </div>
+                                 </div>
+                              </div>
+                              
+                             <div class="iso-box amp branding col-md-4 col-sm-6">
+                                    <div class="portfolio-thumb">
+                                       <img src="images/mark-amp.jpg" class="img-responsive" alt="Portfolio">
+                                          <div class="portfolio-overlay">
+                                             <div class="portfolio-item">
+                                                   <a href="projects/project-4.html"><i class="fa fa-link"></i></a>
+                                                   <h2>Project Four</h2>
+                                                </div>
+                                          </div>
+                                    </div>
+                                 </div> 
+
+                                 <div class="iso-box  col-md-4 col-sm-6">
+                                    <div class="portfolio-thumb">
+                                       <img src="images/amazing-site.jpg" class="img-responsive" alt="Portfolio">
+                                       
+                                          <div class="portfolio-overlay">
+                                             <div class="portfolio-item">
+                                                <a href="projects/project-5.html"><i class="fa fa-link"></i></a>
+                                                   <h2>Project Five</h2>
+                                                </div>
+                                          </div>
+                                    </div>
+                                 </div>
+
+
+                            </div>
+                        </div>
+
+               </div>
+
+         </div>
+
+      </div>
+   </div>
+</section>
+
+<!-- Footer section
+================================================== -->
+<footer>
+	<div class="container">
+		<div class="row">
+
+			<div class="col-md-12 col-sm-12">
+				<p class="wow fadeInUp"  data-wow-delay="0.3s">Copyright © 2019 ANDREW_ TK
+            </p>
+				<ul class="social-icon wow fadeInUp"  data-wow-delay="0.6s">
+						<li><a href="tel:+380938145381" class="fa fa-phone"></a></li>
+						<li><a href="mailto:tk.andrew@outlook.com" class="fa fa-envelope"></a></li>
+						<li><a href="https://github.com/tdh24gtmn" target="_blank" class="fa fa-github"></a></li>
+						<li><a href="https://codepen.io/litoa/" target="_blank" class="fa fa-codepen"></a></li>
+				</ul>
+			</div>
+			
+		</div>
+	</div>
+</footer>
+
+<!-- Javascript 
+================================================== -->
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/isotope.js"></script>
+<script src="js/imagesloaded.min.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/custom.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.8.1/firebase-app.js"></script>
 <script>
 	var config = {
 		apiKey: "AIzaSyDNJ2Ky_h6qfGxq7AYxjzI4bbaCcoLW9xM",
@@ -38,22 +241,10 @@
 	if ('serviceWorker' in navigator) {
 		navigator.serviceWorker.register('/sw.js')
 			.then(function() {
-				console.log('Service Worker Registered');
+				// console.log('Service Worker Registered');
 			});
-	}
-	const messaging = firebase.messaging();
-	messaging.requestPermission()
-		.then(function() {
-			console.log('Notification permission granted.');
-			return messaging.getToken();
-		})
-		.then(function(token) {
-			console.log(token);
-		})
-		.catch(function(err) {
-			console.log('Unable to get permission to notify.', err);
-		})
+	};
 </script>
-</body>
 
+</body>
 </html>
